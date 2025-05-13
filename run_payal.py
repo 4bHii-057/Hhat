@@ -1,3 +1,3 @@
 
-import payal.cpython-312
+import payal
 # Your encrypted module is now running.
