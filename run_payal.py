@@ -1,10 +1,10 @@
-import sys
-import traceback
+# run_payal.py
 
+import payal  # ye aapka .so file hai jo import hoga
+
+# Agar usme koi specific function hai jaise: main() ya start()
+# toh usko call karo. For example:
 try:
-    import payal
+    payal.main()
 except Exception as e:
-    print("[!] Error importing .so:", e)
-    traceback.print_exc()
-    sys.exit(1)
-# Your encrypted module is now running.
+    print("[!] Error:", e)
